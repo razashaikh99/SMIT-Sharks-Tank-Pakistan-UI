@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharks Tank Pakistan - Where Dreams Meet Investment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 58, 138, 0.95) 100%);
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.5);
+        }
+
+        .btn-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-gradient:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            transform: scale(1.05);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #2563eb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .shark-card {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .episode-card {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .glassmorphism {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+    </style>
+</head>
+
+<body class="gradient-bg text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glassmorphism shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-fish text-4xl text-blue-400"></i>
+                    <span class="text-2xl font-bold text-gradient">Sharks Tank Pakistan</span>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-400 transition font-medium">Home</a>
+                    <a href="#sharks" class="hover:text-blue-400 transition font-medium">Sharks</a>
+                    <a href="#episodes" class="hover:text-blue-400 transition font-medium">Episodes</a>
+                    <a href="#calculators" class="hover:text-blue-400 transition font-medium">Calculators</a>
+                    <a href="#about" class="hover:text-blue-400 transition font-medium">About</a>
+                </div>
+
+                <button class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-blue-500 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-700 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <div class="float-animation mb-8">
+                <i class="fas fa-handshake text-8xl text-blue-400 mb-6"></i>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-9">
+                Where Pakistan's <span class="text-gradient">Brightest Minds</span>
+                <br />Secure Game-Changing Investments
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                Watch dreams come to life as passionate founders seek funding to transform their visions into successful
+                ventures
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="btn-gradient px-8 py-4 rounded-full text-lg font-semibold shadow-2xl">
+                    <i class="fas fa-play mr-2"></i>Watch Latest Episode
+                </button>
+                <button
+                    class="glassmorphism px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-600/20 transition">
+                    <i class="fas fa-info-circle mr-2"></i>Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="glassmorphism rounded-2xl p-6 text-center card-hover">
+                    <div class="text-4xl font-bold text-gradient mb-2">13</div>
+                    <div class="text-gray-300">Episodes</div>
+                </div>
+                <div class="glassmorphism rounded-2xl p-6 text-center card-hover">
+                    <div class="text-4xl font-bold text-gradient mb-2">6</div>
+                    <div class="text-gray-300">Sharks</div>
+                </div>
+                <div class="glassmorphism rounded-2xl p-6 text-center card-hover">
+                    <div class="text-4xl font-bold text-gradient mb-2">50+</div>
+                    <div class="text-gray-300">Pitches</div>
+                </div>
+                <div class="glassmorphism rounded-2xl p-6 text-center card-hover">
+                    <div class="text-4xl font-bold text-gradient mb-2">PKR 100M+</div>
+                    <div class="text-gray-300">Invested</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto glassmorphism rounded-3xl p-8 md:p-12 text-center">
+            <i class="fas fa-envelope-open-text text-5xl text-blue-400 mb-6"></i>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Join the Shark Tank Pakistan Community!</h2>
+            <p class="text-gray-300 mb-8 text-lg">
+                Don't miss exclusive insights, updates, and behind-the-scenes content from Shark Tank Pakistan
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
+                <input type="email" placeholder="Enter your email"
+                    class="flex-1 px-6 py-4 rounded-full bg-slate-800/50 border border-blue-500/30 focus:outline-none focus:border-blue-500 transition">
+                <button class="btn-gradient px-8 py-4 rounded-full font-semibold whitespace-nowrap">
+                    Subscribe Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sharks Section -->
+    <section id="sharks" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Meet the <span class="text-gradient">Sharks</span></h2>
+                <p class="text-xl text-gray-300">Pakistan's Top Business Leaders</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Shark Card 1 -->
+                <div class="shark-card rounded-3xl overflow-hidden card-hover">
+                    <div class="h-64 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+                        <!-- <i class="fas fa-user-tie text-8xl text-white/30"></i> -->
+                        <img class="w-full h-full object-cover"
+                            src="https://entrepreneursofpakistan.com/wp-content/uploads/2023/03/RABEEL-WARRAICH-compressed-1024x640.jpg"
+                            alt="">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Rabeel Warraich</h3>
+                        <p class="text-blue-400 mb-4">Leading Investor</p>
+                        <p class="text-gray-300 mb-4">Top investor shining in Pakistani entrepreneurship world</p>
+                        <button class="text-blue-400 hover:text-blue-300 transition font-semibold">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Shark Card 2 -->
+                <div class="shark-card rounded-3xl overflow-hidden card-hover">
+                    <div class="h-64 bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center">
+                        <!-- <i class="fas fa-user-tie text-8xl text-white/30"></i> -->
+                        <img class="w-full h-full object-cover"
+                            src="https://i.ytimg.com/vi/jqqmSchqPxg/maxresdefault.jpg" alt="">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Romanna Dada</h3>
+                        <p class="text-purple-400 mb-4">Shark Investor</p>
+                        <p class="text-gray-300 mb-4">Driven by ambition, resilience, and fierce passion</p>
+                        <button class="text-purple-400 hover:text-purple-300 transition font-semibold">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Shark Card 3 -->
+                <div class="shark-card rounded-3xl overflow-hidden card-hover">
+                    <div class="h-64 bg-gradient-to-br from-cyan-600 to-cyan-800 flex items-center justify-center">
+                        <!-- <i class="fas fa-user-tie text-8xl text-white/30"></i> -->
+                        <img class="w-full h-full object-cover"
+                            src="https://entrepreneursofpakistan.com/wp-content/uploads/2023/03/image-9-compressed-1024x640.jpg"
+                            alt="">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Faisal Aftab</h3>
+                        <p class="text-cyan-400 mb-4">Venture Capitalist</p>
+                        <p class="text-gray-300 mb-4">Supercharging Pakistani ventures with strategic funding</p>
+                        <button class="text-cyan-400 hover:text-cyan-300 transition font-semibold">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Shark Card 4 -->
+                <div class="shark-card rounded-3xl overflow-hidden card-hover">
+                    <div class="h-64 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
+                        <!-- <i class="fas fa-user-tie text-8xl text-white/30"></i> -->
+                        <img class="w-full h-full object-cover"
+                            src="https://i.ytimg.com/vi/M6ea9ZCzhs4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBjkcCeVAIPvp-NVHA2qzeuS6Yt_A"
+                            alt="">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Karim Teli</h3>
+                        <p class="text-green-400 mb-4">Game-Changer</p>
+                        <p class="text-gray-300 mb-4">Well-known entrepreneur winning hearts on the show</p>
+                        <button class="text-green-400 hover:text-green-300 transition font-semibold">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Shark Card 5 -->
+                <div class="shark-card rounded-3xl overflow-hidden card-hover">
+                    <div class="h-64 bg-gradient-to-br from-orange-600 to-orange-800 flex items-center justify-center">
+                        <!-- <i class="fas fa-user-tie text-8xl text-white/30"></i> -->
+                        <img class="w-full h-full object-cover"
+                            src="https://i.ytimg.com/vi/1kmcQXBCMQs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC_3cibojybaSAeyPtCGNnLqe2Knw"
+                            alt="">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Usman Bashir</h3>
+                        <p class="text-orange-400 mb-4">Tech Visionary</p>
+                        <p class="text-gray-300 mb-4">Transforming Pakistan's startup scene with innovation</p>
+                        <button class="text-orange-400 hover:text-orange-300 transition font-semibold">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Shark Card 6 -->
+                <div class="shark-card rounded-3xl overflow-hidden card-hover">
+                    <div class="h-64 bg-gradient-to-br from-pink-600 to-pink-800 flex items-center justify-center">
+                        <!-- <i class="fas fa-user-tie text-8xl text-white/30"></i> -->
+                        <img class="w-full h-full object-cover"
+                            src="https://courtingthelaw.com/wp-content/uploads/unnamed6.jpg" alt="">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Taimur Malik</h3>
+                        <p class="text-pink-400 mb-4">Legal Innovator</p>
+                        <p class="text-gray-300 mb-4">Revolutionizing legal access across Pakistan</p>
+                        <button class="text-pink-400 hover:text-pink-300 transition font-semibold">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episodes Section -->
+    <section id="episodes" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Latest <span class="text-gradient">Episodes</span></h2>
+                <p class="text-xl text-gray-300">Relive Every Pitch</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="episode-card rounded-2xl overflow-hidden card-hover">
+                    <div
+                        class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center relative">
+                        <!-- <i class="fas fa-play-circle text-6xl text-white/80"></i> -->
+                        <img class="w-full h-full object-cover"
+                            src="https://myco.io/_next/image?url=https%3A%2F%2Fassets.myco.io%2Fpublic%2Fcompressed%2Fthumbnails%2F20250126%2F6368b2c599a520e8777c41db-02-1737900858890.webp&w=3840&q=30"
+                            alt="">
+                        <div class="absolute top-4 right-4 bg-red-600 px-3 py-1 rounded-full text-sm font-bold">
+                            FINALE
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Episode 13: Grand Finale</h3>
+                        <p class="text-gray-300 mb-4">Unforgettable showcase of innovative pitches and deals</p>
+                        <button class="text-blue-400 hover:text-blue-300 transition font-semibold">
+                            Watch Now <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="episode-card rounded-2xl overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                        <img class="w-full h-full object-cover"
+                            src="https://i.ytimg.com/vi/6PGt_ORwi7c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA4gJi0PLlg1BdeQEPFV7Gr5JKsTg"
+                            alt="">
+                        <!-- <i class="fas fa-play-circle text-6xl text-white/80"></i> -->
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Episode 12: Bold Deals</h3>
+                        <p class="text-gray-300 mb-4">Dynamic range of innovative pitches and negotiations</p>
+                        <button class="text-blue-400 hover:text-blue-300 transition font-semibold">
+                            Watch Now <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="episode-card rounded-2xl overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
+                        <!-- <i class="fas fa-play-circle text-6xl text-white/80"></i> -->
+                        <img class="w-full h-full object-cover"
+                            src="https://sharkstankpakistan.pk/wp-content/uploads/2024/11/Shark-Tank-Pakistan.webp"
+                            alt="">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Episode 11: Key Takeaways</h3>
+                        <p class="text-gray-300 mb-4">Exciting array of entrepreneurial talent and innovation</p>
+                        <button class="text-blue-400 hover:text-blue-300 transition font-semibold">
+                            Watch Now <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculators Section -->
+    <section id="calculators" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Finance <span class="text-gradient">Calculators</span>
+                </h2>
+                <p class="text-xl text-gray-300">Tools to Help Your Business Grow</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glassmorphism rounded-3xl p-8 card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-calculator text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Equity Loan Calculator</h3>
+                            <p class="text-blue-400">Fund Your Business Ideas</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">Unlock the funding potential your business needs to grow, innovate,
+                        and succeed</p>
+                    <button class="btn-gradient px-6 py-3 rounded-full font-semibold w-full">
+                        Calculate Now
+                    </button>
+                </div>
+
+                <div class="glassmorphism rounded-3xl p-8 card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-chart-line text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Business Valuation</h3>
+                            <p class="text-purple-400">Know Your Worth</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">Assess your business's worth, attract investors, and pave the way for
+                        success</p>
+                    <button class="btn-gradient px-6 py-3 rounded-full font-semibold w-full">
+                        Calculate Now
+                    </button>
+                </div>
+
+                <div class="glassmorphism rounded-3xl p-8 card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-percentage text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Dilution Calculator</h3>
+                            <p class="text-green-400">Equity Management</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">Model your funding round to understand how much equity you should give
+                        away</p>
+                    <button class="btn-gradient px-6 py-3 rounded-full font-semibold w-full">
+                        Calculate Now
+                    </button>
+                </div>
+
+                <div class="glassmorphism rounded-3xl p-8 card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-orange-600 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-code text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">LLM API Price Calculator</h3>
+                            <p class="text-orange-400">Compare Providers</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">Real-time pricing comparison for 10+ LLM providers updated for 2025
+                    </p>
+                    <button class="btn-gradient px-6 py-3 rounded-full font-semibold w-full">
+                        Calculate Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Season 2 Announcement -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto glassmorphism rounded-3xl p-8 md:p-12 text-center">
+            <div class="mb-6">
+                <i class="fas fa-star text-6xl text-yellow-400"></i>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Shark Tank Pakistan Season 2</h2>
+            <h3 class="text-xl md:text-2xl text-blue-400 mb-6">When Will It Start? Stay Updated!</h3>
+            <p class="text-gray-300 mb-8 text-lg leading-relaxed">
+                As of now, Shark Tank Pakistan Season 2 has not been officially announced. With Season 1 recently
+                concluding,
+                fans and aspiring entrepreneurs are eagerly awaiting updates. Subscribe now and be the first to know
+                when
+                Season 2 is announced!
+            </p>
+            <button class="btn-gradient px-8 py-4 rounded-full font-semibold text-lg">
+                <i class="fas fa-bell mr-2"></i>Notify Me
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">Discover What <span class="text-gradient">Sharks Tank
+                    Pakistan</span> is All About</h2>
+            <p class="text-xl text-gray-300 leading-relaxed mb-12 max-w-4xl mx-auto">
+                Welcome to Sharks Tank Pakistan, where innovation meets opportunity! Our platform empowers aspiring
+                entrepreneurs to showcase their business ideas and secure life-changing investments from top industry
+                leaders.
+                Shark Tank Pakistan aims to transform dreams into reality by fostering creativity, mentorship, and
+                collaboration,
+                fueling economic growth and entrepreneurial success across Pakistan.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glassmorphism rounded-2xl p-6 card-hover">
+                    <i class="fas fa-lightbulb text-5xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Innovation</h3>
+                    <p class="text-gray-300">Transforming ideas into reality</p>
+                </div>
+                <div class="glassmorphism rounded-2xl p-6 card-hover">
+                    <i class="fas fa-handshake text-5xl text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Investment</h3>
+                    <p class="text-gray-300">Life-changing funding opportunities</p>
+                </div>
+                <div class="glassmorphism rounded-2xl p-6 card-hover">
+                    <i class="fas fa-rocket text-5xl text-purple-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Growth</h3>
+                    <p class="text-gray-300">Fueling entrepreneurial success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 border-t border-blue-500/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-fish text-3xl text-blue-400"></i>
+                        <span class="text-xl font-bold">Sharks Tank</span>
+                    </div>
+                    <p class="text-gray-400">Empowering Pakistani entrepreneurs</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">Episodes</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">Sharks</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-blue-400 transition">Calculators</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">About</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-500 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center hover:opacity-80 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" 
+                            class="w-10 h-10 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-8 border-t border-blue-500/20 text-gray-400">
+                <p>© 2025 Sharks Tank Pakistan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
